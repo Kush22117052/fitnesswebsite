@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Training - FitLife</title>
+    <link rel="stylesheet" href="training.css">
+</head>
+<body>
+    <!-- Background Video -->
+    <div class="video-container">
+        <video autoplay muted loop id="background-video">
+            <source src="143431-782373969_small.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">
+            <img src="sport.png" alt="Fitness Logo">
+            <span>FitLife</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Start</a></li>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+   
+            <li><a href="training.html">Training</a></li>
+            <li><a href="support.html">Support</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <!-- Training Content -->
+    <section class="training-section">
+        <h1>Training Programs</h1>
+        <p>Explore our personalized training programs designed for every fitness level.</p>
+
+        <!-- Programs Layout -->
+        <div class="programs">
+            <div class="program">
+                <h2>Beginner Program</h2>
+                <p>Perfect for those just starting out.</p>
+                <button class="subscribe-btn" onclick="openModal('beginner')">Subscribe</button>
+            </div>
+            <div class="program">
+                <h2>Pro Program</h2>
+                <p>Advanced training for experienced athletes.</p>
+                <button class="subscribe-btn" onclick="openModal('pro')">Subscribe</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Subscription Modal -->
+    <div id="subscription-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <h2>Subscribe</h2>
+            <p id="subscription-price">Price: $29.99/month</p>
+            <h3>Payment Options</h3>
+            <ul>
+                <li>Credit Card</li>
+                <li>PayPal</li>
+                <li>Bank Transfer</li>
+            </ul>
+            <button>Confirm Subscription</button>
+        </div>
+    </div>
+
+    <script src="training.js"></script>
+</body>
+</html>
+

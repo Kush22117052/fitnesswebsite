@@ -1,0 +1,85 @@
+/* Common Nav Bar Styles */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: black;
+    position: relative; /* Ensure it stays above other content */
+    z-index: 10; /* Keep the nav on top */
+}
+
+nav .logo {
+    display: flex;
+    align-items: center;
+}
+
+nav .logo img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+nav .logo span {
+    color: white;
+    font-size: 1.5rem;
+}
+
+nav .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav .nav-links li {
+    list-style: none;
+}
+
+nav .nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+
+.burger {
+    display: none; /* For mobile view */
+}
+
+/* Slider Section */
+/* Slider Section */
+/* Slider Section */
+
+/* Navigation Buttons */
+.nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    z-index: 20;
+}
+
+
+
+
+/* Content within Slides */
+.slide-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Rest of the page-specific CSS will go here */
